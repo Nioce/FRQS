@@ -19,12 +19,16 @@ public class Phrase
     /** Finds a letter or string place inside a string and  */
     public int findNthOccurence(String str, int n){
         int count = 0;
-        int i = 0;
-        while(count<n && currentPhrase.indexOf(str, i)>-1){
+        int loc = currentPhrase.indexOf(str);
+        while(loc > -1){
             count++;
-            i = currentPhrase.indexOf(str, i+1);
+            if(count==n){
+                return loc;
+            }
+            loc = currentPhrase.indexOf(str, loc+1);
         }
-        return i;
+        
+        return -1;
     }
        
     /** Replaces the part of the string the the requested string */
@@ -32,9 +36,11 @@ public class Phrase
         String temp = "";
         String tempprev = "";
         int loc= findNthOccurence(str, n);
-        String before = currentPhrase.substring(0,loc);
-        String after = currentPhrase.substring(loc,currentPhrase.length());
-        currentPhrase = before + rpl + after;
+        if(loc !=-1){
+            String before = currentPhrase.substring(0,loc);
+            String after = currentPhrase.substring(loc+str.length(),currentPhrase.length());
+            currentPhrase = before + rpl + after;
+        }
     }
     
     /** Finds the last occurence of the string */
