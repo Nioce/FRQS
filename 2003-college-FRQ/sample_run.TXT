@@ -1,3 +1,0 @@
-26000
-College[Colgate, Northeast, 26000]
-College[Dartmouth College, Northeast, 27764]
