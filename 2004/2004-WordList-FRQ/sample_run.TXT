@@ -1,0 +1,6 @@
+3
+1
+0
+[cat, mouse, dog, dog]
+[mouse]
+[mouse]
