@@ -8,9 +8,8 @@ import java.util.ArrayList;
 public class TestResults
 {
     /**
-     * Groups StudentAnswerSheets to a list of sheets 
+     * Groups StudentAnswerSheets to a list of sheets and makes it a public ent 
      * @parm takes a set of StudentAnswerSheets 
-     * @return returns a list of StudentAnswerSheets and makes it a public object
      */
     private ArrayList<StudentAnswerSheet> sheets;
     public TestResults(ArrayList<StudentAnswerSheet> sheets){
@@ -19,8 +18,8 @@ public class TestResults
 
     /**
      * Finds the highest scoring student in a stack of sheets
-     * @parm takes stack of sheets gets score 
-     * @return returns the name of highest scoring person in the list of sheets based off key
+     * @parm a group of answer keys
+     * @return tha name of highest scoring student
      */
     public String highestScoringStudent(ArrayList<String> key){
         double high = sheets.get(0).getScore(key);

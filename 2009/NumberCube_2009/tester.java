@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class tester here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Andrew Wilomovsky
+ * tester class
+ * Test all of the functions in class while making cubes from NumberCube class
  */
 
 import java.util.Arrays;

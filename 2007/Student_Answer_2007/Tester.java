@@ -1,8 +1,6 @@
 /*** 
  * Andrew Wilomovsky
- * Tester class
-     * @pram Makes answer sheets and groups it 
-     * @return returns results from other class*/
+ * Tester class*/
 import java.util.ArrayList;
 public class Tester
 {
@@ -23,11 +21,12 @@ public class Tester
     
     /**
      * Test functions in other class
-     * @parm makes answer sheets 
+     * @pram string's for tester
      * @return's the results from sheets in the functions using the functions in the other class
      */
     public static void main(String[] tester){
         ArrayList<String> bobsAnswers = new ArrayList<String>();
+        
         bobsAnswers.add("A");
         bobsAnswers.add("B");
         bobsAnswers.add("D");

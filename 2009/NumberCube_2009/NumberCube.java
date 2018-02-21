@@ -18,7 +18,6 @@ public class NumberCube
     
     /**
     * Creates random number for toss
-    * @parm random number
     * @return random number for value 1-6
     */
     public int toss(){

@@ -10,7 +10,6 @@ public class StudentAnswerSheet
     /**
      * Converts Private objects to StudentAnswerSheet and makes it public
      * @parm takes in private objects 
-     * @return objects and makes it public
      */
     private ArrayList<String> answers;
     private String name;
@@ -22,8 +21,8 @@ public class StudentAnswerSheet
     
     /**
      * Returns name
-     * @parm takes in name 
-     * @return returns name of an AnswerSheet
+     * @parm nothing
+     * @return returns name
      */
     public String getName(){
         return name;
@@ -32,7 +31,7 @@ public class StudentAnswerSheet
     /**
      * Gets score for singular answer Sheet
      * @parm takes a singular Student answersheet and a key 
-     * @return the score based on answers given compared to the key
+     * @return double
      */
     public double getScore(ArrayList<String> key){
         double score = 0.0;
